@@ -14,7 +14,11 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+//Pelajaran pertemuan 5
+//php artisan make:migration table_mahasiswa /untuk migrasi table ke coding folder database
+//php artisan migrate /untuk migrasi ke database
+//php artisan make:seeder mahasiswa //ntahlah untuk apa intinya begitulah nanti ada muncul folder seeder di database
+//php artisan migrate --seed //supaya apa, supaya biar tabelnya keisi
 // Route::get('/', function () {
 //     return view('welcome');
 // });
