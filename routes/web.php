@@ -32,5 +32,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class,'index']);
 Route::get('/about', [AboutController::class,'index'])->name('about');
 Route::get('/mahasiswa', [mahasiswaController::class,'index'])->name('mahasiswa');
-Route::get('/mahasiswa/edit', [mahasiswaController::class,'index'])->name('mahasiswa.edit');
-Route::get('/mahasiswa/delete', [mahasiswaController::class,'index'])->name('mahasiswa.delete');
+Route::get('/mahasiswa/edit', [mahasiswaController::class,'edit'])->name('mahasiswa.edit');
+Route::get('/mahasiswa/delete', [mahasiswaController::class,'destroy'])->name('mahasiswa.delete');
