@@ -18,7 +18,7 @@
             <a href="{{route('mahasiswa.edit',$d->id)}}" class="btn btn-warning">Edit</a>
         </td>
         <td>
-            <form action="{{route('mahasiswa.delete',$d->id)}}">
+            <form action="{{route('mahasiswa.delete',$d->id)}}" class="btn btn-danger">Delete
             {{ csrf_field() }}
             {{method_field('DELETE')}}
         </form>
