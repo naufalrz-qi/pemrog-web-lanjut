@@ -16,7 +16,7 @@ class mahasiswaController extends Controller
     public function index()
     {
         $data = mahasiswa_model::get();
-        dd($data);
+        //dd($data);
         $no=0;
         return view('mahasiswa',compact('data','no'));
     }
