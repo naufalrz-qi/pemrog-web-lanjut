@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\KelasController;
 use App\Http\Controllers\mahasiswaController;
 use Illuminate\Support\Facades\Route;
 
@@ -16,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 //Pelajaran pertemuan 5
-
+// syntax : php artisan make:controller namactrl -r
 //php artisan make:migration table_mahasiswa /untuk migrasi table ke coding folder database
 //php artisan migrate /untuk migrasi ke database
 //php artisan make:seeder mahasiswa //ntahlah untuk apa intinya begitulah nanti ada muncul folder seeder di database
@@ -34,3 +35,7 @@ Route::get('/about', [AboutController::class,'index'])->name('about');
 Route::get('/mahasiswa', [mahasiswaController::class,'index'])->name('mahasiswa');
 Route::get('/mahasiswa/{id}/edit', [mahasiswaController::class,'edit'])->name('mahasiswa.edit');
 Route::get('/mahasiswa/{id}/delete', [mahasiswaController::class,'destroy'])->name('mahasiswa.delete');
+
+Route::get('/kelas', [KelasController::class,'index'])->name('kelas');
+Route::get('/kelas/{id}/edit', [KelasController::class,'index'])->name('kelas.edit');
+Route::get('/kelas/{id}/delete', [KelasController::class,'index'])->name('kelas.delete');
