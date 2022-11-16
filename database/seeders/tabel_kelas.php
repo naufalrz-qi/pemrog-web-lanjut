@@ -18,7 +18,7 @@ class tabel_kelas extends Seeder
             'fakultas' => 'Teknik dan Desain',
             'prodi' => 'S1 RPL',
             'kelas' => 'A',
-            'isi' => 2001040002,
+            'isi' => 20,
             'created_at' => new \DateTime,
             'updated_at' => null
         ];

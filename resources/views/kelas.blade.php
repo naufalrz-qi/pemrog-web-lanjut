@@ -1,5 +1,13 @@
 @extends('layout.app')
 @section('content')
+<style>
+    th {
+    padding: 5px;
+}
+td{
+    padding: 5px;
+}
+</style>
 <table>
     <thead>
         <tr>

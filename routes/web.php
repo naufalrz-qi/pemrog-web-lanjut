@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\blogcontroller;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\KelasController;
 use App\Http\Controllers\mahasiswaController;
@@ -39,3 +40,5 @@ Route::get('/mahasiswa/{id}/delete', [mahasiswaController::class,'destroy'])->na
 Route::get('/kelas', [KelasController::class,'index'])->name('kelas');
 Route::get('/kelas/{id}/edit', [KelasController::class,'index'])->name('kelas.edit');
 Route::get('/kelas/{id}/delete', [KelasController::class,'index'])->name('kelas.delete');
+
+Route::resource('blog', blogcontroller::class);
