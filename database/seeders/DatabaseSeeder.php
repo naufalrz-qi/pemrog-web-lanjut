@@ -15,7 +15,7 @@ class DatabaseSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
         $this->call(
-            [tabel_kelas::class,]
+            [mid_002::class,]
         );
     }
 }

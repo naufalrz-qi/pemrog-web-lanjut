@@ -5,10 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class blogs extends Model
+class Midsemester extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'author', 'title', 'body', 'keyword'
+        'judul', 'isi', 'penulis', 'keterangan', 'tahun_terbit'
     ];
 }

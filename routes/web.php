@@ -5,6 +5,7 @@ use App\Http\Controllers\blogcontroller;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\KelasController;
 use App\Http\Controllers\mahasiswaController;
+use App\Http\Controllers\UtsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -42,3 +43,11 @@ Route::get('/kelas/{id}/edit', [KelasController::class,'index'])->name('kelas.ed
 Route::get('/kelas/{id}/delete', [KelasController::class,'index'])->name('kelas.delete');
 
 Route::resource('blog', blogcontroller::class);
+// Route::resource('mid', UtsController::class);
+Route::get('/mid/tampil', [UtsController::class,'index'])->name('mid.index');
+Route::get('/mid/tambah', [UtsController::class,'create'])->name('mid.create');
+Route::any('/mid/{id}/edit', [UtsController::class,'edit'])->name('mid.edit');
+Route::any('/mid/{id}/update', [UtsController::class,'update'])->name('mid.update');
+Route::post('/mid/simpan', [UtsController::class,'store'])->name('mid.store');
+Route::any('/mid/{id}/delete', [UtsController::class,'destroy'])->name('mid.destroy');
+
