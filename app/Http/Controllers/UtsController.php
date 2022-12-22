@@ -108,8 +108,8 @@ class UtsController extends Controller
             'keterangan' => 'required|string',
             'tahun_terbit' => 'required|integer',
         ]);
+        $mid = Midsemester::findOrFail($id);
 
-        $mid = Midsemester::findOrFail();
         $mid->update([
             'judul' => $request->judul,
             'isi' => $request->isi,
